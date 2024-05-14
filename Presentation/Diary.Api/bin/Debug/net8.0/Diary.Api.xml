@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Diary.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Diary.Api.Controllers.AuthController">
+            <summary>
+            Контроль регистрации и авторизации
+            </summary>
+        </member>
+        <member name="M:Diary.Api.Controllers.AuthController.Register(Diary.Domain.Dto.UserDto.RegisterUserDto)">
+            <summary>
+            Регистрация пользователя
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Diary.Api.Controllers.AuthController.Login(Diary.Domain.Dto.UserDto.LoginUserDto)">
+            <summary>
+            Авторизация пользователя
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Diary.Api.Controllers.ReportController">
+            <summary>
+            Контроллер для управления отчётами
+            </summary>
+        </member>
+        <member name="M:Diary.Api.Controllers.ReportController.GetReportsAsync(System.Int64)">
+            <summary>
+            Выводит список всех отчётов
+            </summary>
+            <param name="userId">Id пользователя</param>
+            <response code = "200">Если отчёты были выведены</response>
+            <response code = "400">Если отчёты не были выведены</response>
+        </member>
+        <member name="M:Diary.Api.Controllers.ReportController.GetReportAsync(System.Int64)">
+            <summary>
+            Выводит один отчёт по id
+            </summary>
+            <param name="id">id отчёта</param>
+            <response code = "200">Если отчёт был выведен</response>
+            <response code = "400">Если отчёт не был выведен</response>
+        </member>
+        <member name="M:Diary.Api.Controllers.ReportController.CreateReportAsync(Diary.Domain.Dto.ReportDto.CreateReportDto)">
+            <summary>
+            Создаёт новый отчёт
+            </summary>
+            <param name="dto">данные для создания отчёта</param>
+            <remarks>
+            Request for create report:
+            
+                POST
+                {
+                    "name": "Report #1",
+                    "description": "Test Report",
+                    "userId": 1
+                }
+            
+            </remarks>
+            <response code = "200">Если отчёт был создан</response>
+            <response code = "400">Если отчёт не был создан</response>
+        </member>
+        <member name="M:Diary.Api.Controllers.ReportController.UpdateReportAsync(Diary.Domain.Dto.ReportDto.UpdateReportDto)">
+            <summary>
+            Обновляет существующий отчёт
+            </summary>
+            <param name="dto">данные для обновления отчёта</param>
+            <remarks>
+            Request for update report:
+            
+                PUT
+                {
+                    "id": 1,
+                    "name": "Test Report",
+                    "description": "Test Description"
+                }
+            
+            </remarks>
+            <response code = "200">Если отчёт был обновлён</response>
+            <response code = "400">Если отчёт не был обновлён</response>
+        </member>
+        <member name="M:Diary.Api.Controllers.ReportController.DeleteReportAsync(System.Int64)">
+            <summary>
+            Удаляет отчёт
+            </summary>
+            <param name="dto">id отчёта</param>
+            <param name="id"></param>
+            <response code = "200">Если отчёт был удалён</response>
+            <response code = "400">Если отчёт не был удалён</response>
+        </member>
+        <member name="T:Diary.Api.Controllers.RoleController">
+            <summary>
+            Контроллер для управления ролями и управления ролями для пользователей
+            </summary>
+        </member>
+        <member name="M:Diary.Api.Controllers.RoleController.CreateRoleAsync(Diary.Domain.Dto.RoleDto.RoleDto)">
+            <summary>
+            Создание новой роли
+            </summary>
+            <remarks>
+            Request for create report:
+            
+                POST
+                {
+                    "name": "Report #1",
+                }
+            
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Diary.Api.Controllers.RoleController.DeleteRoleAsync(System.Int64)">
+            <summary>
+            Удаление роли
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Diary.Api.Controllers.RoleController.UpdateRoleAsync(Diary.Domain.Dto.RoleDto.UpdateRoleDto)">
+            <summary>
+            Обновление роли
+            </summary>
+            <remarks>
+            Request for create report:
+            
+                POST
+                {
+                    "id": 0,
+                    "name": "string",
+                }
+            
+            </remarks>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Diary.Api.Controllers.RoleController.AddUserRoleAsync(Diary.Domain.Dto.UserRole.CreateUserRole)">
+            <summary>
+            Добавление роли пользователю
+            </summary>
+            <remarks>
+            Request for create report:
+            
+                POST
+                {
+                    "login": "svyatmtk",
+                    "roleId": 2
+                }
+            
+            </remarks>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Diary.Api.Controllers.RoleController.UpdateUserRoleAsync(Diary.Domain.Dto.UserRole.UpdateUserRole)">
+            <summary>
+            Обновить роль пользователя
+            </summary>
+            <remarks>
+            Request for create report:
+            
+                POST
+                {
+                    "login": "svyatmtk",
+                    "oldRoleId": 2,
+                    "newRoleId": 1
+                }
+            
+            </remarks>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Diary.Api.Controllers.RoleController.RemoveUserRoleAsync(Diary.Domain.Dto.UserRole.RemoveUserRole)">
+            <summary>
+            Удаление роли у пользователя
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Diary.Api.Controllers.TokenController">
+            <summary>
+            Контроллер обновления refresh токена
+            </summary>
+        </member>
+        <member name="M:Diary.Api.Controllers.TokenController.RefreshToken(Diary.Domain.Dto.TokenDto)">
+            <summary>
+            Обновление refresh токена
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Diary.Api.Startup.AddAuthenticationAndAuthorization(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>
+            Добавление
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Diary.Api.Startup.AddSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Подключение swagger
+            </summary>
+            <param name="services"></param>
+        </member>
+    </members>
+</doc>

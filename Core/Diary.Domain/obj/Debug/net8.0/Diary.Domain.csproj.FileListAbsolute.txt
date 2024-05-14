@@ -1,0 +1,12 @@
+C:\Users\Eugeny\Desktop\Diary\Core\Diary.Domain\bin\Debug\net8.0\Diary.Domain.deps.json
+C:\Users\Eugeny\Desktop\Diary\Core\Diary.Domain\bin\Debug\net8.0\Diary.Domain.dll
+C:\Users\Eugeny\Desktop\Diary\Core\Diary.Domain\bin\Debug\net8.0\Diary.Domain.pdb
+C:\Users\Eugeny\Desktop\Diary\Core\Diary.Domain\obj\Debug\net8.0\Diary.Domain.csproj.AssemblyReference.cache
+C:\Users\Eugeny\Desktop\Diary\Core\Diary.Domain\obj\Debug\net8.0\Diary.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eugeny\Desktop\Diary\Core\Diary.Domain\obj\Debug\net8.0\Diary.Domain.AssemblyInfoInputs.cache
+C:\Users\Eugeny\Desktop\Diary\Core\Diary.Domain\obj\Debug\net8.0\Diary.Domain.AssemblyInfo.cs
+C:\Users\Eugeny\Desktop\Diary\Core\Diary.Domain\obj\Debug\net8.0\Diary.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Eugeny\Desktop\Diary\Core\Diary.Domain\obj\Debug\net8.0\Diary.Domain.dll
+C:\Users\Eugeny\Desktop\Diary\Core\Diary.Domain\obj\Debug\net8.0\refint\Diary.Domain.dll
+C:\Users\Eugeny\Desktop\Diary\Core\Diary.Domain\obj\Debug\net8.0\Diary.Domain.pdb
+C:\Users\Eugeny\Desktop\Diary\Core\Diary.Domain\obj\Debug\net8.0\ref\Diary.Domain.dll

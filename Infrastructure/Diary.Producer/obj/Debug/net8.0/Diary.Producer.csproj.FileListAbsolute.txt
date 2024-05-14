@@ -1,0 +1,17 @@
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\bin\Debug\net8.0\Diary.Producer.deps.json
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\bin\Debug\net8.0\Diary.Producer.dll
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\bin\Debug\net8.0\Diary.Producer.pdb
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\bin\Debug\net8.0\Diary.DAL.dll
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\bin\Debug\net8.0\Diary.Domain.dll
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\bin\Debug\net8.0\Diary.DAL.pdb
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\bin\Debug\net8.0\Diary.Domain.pdb
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\obj\Debug\net8.0\Diary.Producer.csproj.AssemblyReference.cache
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\obj\Debug\net8.0\Diary.Producer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\obj\Debug\net8.0\Diary.Producer.AssemblyInfoInputs.cache
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\obj\Debug\net8.0\Diary.Producer.AssemblyInfo.cs
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\obj\Debug\net8.0\Diary.Producer.csproj.CoreCompileInputs.cache
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\obj\Debug\net8.0\Diary.Producer.csproj.CopyComplete
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\obj\Debug\net8.0\Diary.Producer.dll
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\obj\Debug\net8.0\refint\Diary.Producer.dll
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\obj\Debug\net8.0\Diary.Producer.pdb
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\obj\Debug\net8.0\ref\Diary.Producer.dll

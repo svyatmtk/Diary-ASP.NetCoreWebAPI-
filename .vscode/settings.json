@@ -1,0 +1,4 @@
+{
+    "dotnet.defaultSolution": "Diary.sln",
+    "dotnet.implementType.propertyGenerationBehavior": "preferAutoProperties"
+}

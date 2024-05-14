@@ -1,0 +1,15 @@
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\bin\Debug\net8.0\Diary.DAL.deps.json
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\bin\Debug\net8.0\Diary.DAL.dll
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\bin\Debug\net8.0\Diary.DAL.pdb
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\bin\Debug\net8.0\Diary.Domain.dll
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\bin\Debug\net8.0\Diary.Domain.pdb
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\obj\Debug\net8.0\Diary.DAL.csproj.AssemblyReference.cache
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\obj\Debug\net8.0\Diary.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\obj\Debug\net8.0\Diary.DAL.AssemblyInfoInputs.cache
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\obj\Debug\net8.0\Diary.DAL.AssemblyInfo.cs
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\obj\Debug\net8.0\Diary.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\obj\Debug\net8.0\Diary.DAL.csproj.CopyComplete
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\obj\Debug\net8.0\Diary.DAL.dll
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\obj\Debug\net8.0\refint\Diary.DAL.dll
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\obj\Debug\net8.0\Diary.DAL.pdb
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\obj\Debug\net8.0\ref\Diary.DAL.dll

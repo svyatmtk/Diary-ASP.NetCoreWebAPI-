@@ -1,0 +1,15 @@
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\bin\Debug\net8.0\Diary.Consumer.deps.json
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\bin\Debug\net8.0\Diary.Consumer.dll
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\bin\Debug\net8.0\Diary.Consumer.pdb
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\bin\Debug\net8.0\Diary.Domain.dll
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\bin\Debug\net8.0\Diary.Domain.pdb
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\obj\Debug\net8.0\Diary.Consumer.csproj.AssemblyReference.cache
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\obj\Debug\net8.0\Diary.Consumer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\obj\Debug\net8.0\Diary.Consumer.AssemblyInfoInputs.cache
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\obj\Debug\net8.0\Diary.Consumer.AssemblyInfo.cs
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\obj\Debug\net8.0\Diary.Consumer.csproj.CoreCompileInputs.cache
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\obj\Debug\net8.0\Diary.Consumer.csproj.CopyComplete
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\obj\Debug\net8.0\Diary.Consumer.dll
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\obj\Debug\net8.0\refint\Diary.Consumer.dll
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\obj\Debug\net8.0\Diary.Consumer.pdb
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\obj\Debug\net8.0\ref\Diary.Consumer.dll
