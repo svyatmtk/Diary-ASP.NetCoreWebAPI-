@@ -20,7 +20,7 @@
 * Diary.Domain - содержит описание сущностей, DTO, Интерфейсов а также некоторых вспомогательных классов.
 
 ## Сущности
-```
+``` CSharp
 public class User : IEntityId<long>, IAuditable
     {
         public long Id { get; set; }
