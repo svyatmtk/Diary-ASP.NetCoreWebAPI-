@@ -6,9 +6,10 @@
 *  Entity Framework core
 *  AutoMapper
 *  FluentValidation
-* JWT Bearer для аутентификации
+*  JWT Bearer для аутентификации
 *  Serilog для логгирования
 *  RabbitMQ - брокер сообщений
+*  Fluent Validation
 
 # Проект разделён на три слоя:
 * Presentation - WebApi (REST API)
@@ -75,3 +76,110 @@ public class CollectionResult<T> : BaseResult<IEnumerable<T>>
     public int Count { get; set; }
 }
 ```
+## Diary.Application 
+Содержит в себе реализацию сервисов, Fluent Validation, AutoMapper, также имеет класс Dependency Injection.
+
+* Реализация сервисов
+  Сервис должен реализовывать интерфейс IReportService. Интерфейсы являются middleware для обращения к БД и возвращению ответа в контроллеры.
+  ``` c#
+      public class ReportService : IReportService
+    {
+    private readonly IMessageProducer _messageProducer;
+    private readonly IOptions<RabbitMqSettings> _options;
+    private readonly IBaseRepository<Report> _reportRepository;
+    private readonly IBaseRepository<User> _userRepository;
+    private readonly IReportValidator _reportValidator;
+    private readonly ILogger _logger;
+    private readonly IMapper _mapper;
+
+    public ReportService(IBaseRepository<Report> reportRepository, ILogger serilog,
+        IBaseRepository<User> userRepository, IReportValidator reportValidator, IMapper mapper,
+        IMessageProducer messageProducer, IOptions<RabbitMqSettings> options)
+    {
+        _reportRepository = reportRepository;
+        _logger = serilog;
+        _userRepository = userRepository;
+        _reportValidator = reportValidator;
+        _mapper = mapper;
+        _messageProducer = messageProducer;
+        _options = options;
+    }
+
+    /// <inheritdoc />
+    public async Task<CollectionResult<ReportDto>> GetReportsAsync(long userId)
+    {
+        ReportDto[] reports;
+
+        reports = await _reportRepository.GetAll()
+            .Where(x => x.UserId == userId)
+            .Select(x => new ReportDto(x.Id, x.Name, x.Description, x.CreatedAt.ToLongDateString()))
+            .ToArrayAsync();
+
+        if (!reports.Any())
+        {
+            _logger.Warning(ErrorMessage.ReportsNotFound);
+            return new CollectionResult<ReportDto>()
+            {
+                ErrorMessage = ErrorMessage.ReportsNotFound, ErrorCode = (int)ErrorCodes.ReportsNotFound
+            };
+        }
+
+        return new CollectionResult<ReportDto>() { Data = reports, Count = reports.Length };
+    }
+    ```
+  * Fluent Validation
+    Содержит в себе правила для проверки DTO на соответствие ограничениям для полей в записи БД.
+    
+``` c#
+public class CreateReportValidation : AbstractValidator<CreateReportDto>
+{
+    public CreateReportValidation()
+    {
+        RuleFor(x => x.Name).NotEmpty().MaximumLength(100);
+        RuleFor(x => x.Description).NotEmpty().MaximumLength(2000);
+    }
+}
+```
+
+* AutoMapper
+Служит для маппинга из сущностей в DTO или наоборот.
+``` c#
+public class ReportMapping : Profile
+{
+    public ReportMapping()
+    {
+        CreateMap<Report, ReportDto>()
+            .ForCtorParam(ctorParamName: "Id", expression => expression.MapFrom(s => s.Id))
+            .ForCtorParam(ctorParamName: "Name", expression => expression.MapFrom(s => s.Name))
+            .ForCtorParam(ctorParamName: "Description", expression => expression.MapFrom(s => s.Description))
+            .ForCtorParam(ctorParamName: "DateCreated", expression => expression.MapFrom(s => s.CreatedAt))
+            .ReverseMap();
+
+    }
+}
+```
+
+* Dependency Injection
+  Расширяет поведение типов, реализующих интерфейс IServiceCollection
+
+  ``` c#
+   public static void AddApplication(this IServiceCollection services)
+    {
+        services.AddAutoMapper(typeof(ReportMapping));
+        
+        services.InitServices();
+    }
+
+    private static void InitServices(this IServiceCollection services)
+    {
+        services.AddScoped<IReportValidator, ReportValidation>();
+        
+        services.AddScoped<IValidator<CreateReportDto>, CreateReportValidation>();
+        services.AddScoped<IValidator<UpdateReportDto>, UpdateReportValidation>();
+        
+        services.AddScoped<IReportService, ReportService>();
+        services.AddScoped<ITokenService, TokenService>();
+        services.AddScoped<IAuthService, AuthService>();
+        services.AddScoped<IRoleService, RoleService>();
+    }
+  ```
