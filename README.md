@@ -183,3 +183,75 @@ public class ReportMapping : Profile
         services.AddScoped<IRoleService, RoleService>();
     }
   ```
+# Diary.DAL
+Слой, отвечающий за работу с базой данных
+
+## Configurations 
+Конфигурация сущностей при помощи Fluent Api
+``` c#
+public class UserConfiguration : IEntityTypeConfiguration<User>
+    {
+        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<User> builder)
+        {
+            builder.Property(x => x.Id).ValueGeneratedOnAdd();
+            builder.Property(x => x.Login).IsRequired().HasMaxLength(100);
+            builder.Property(x => x.Password).IsRequired();
+
+            builder.HasMany<Report>(x => x.Reports)
+                    .WithOne(x => x.User)
+                    .HasForeignKey(x => x.UserId)
+                    .HasPrincipalKey(x => x.Id);
+
+            builder.HasMany(x => x.Roles)
+                .WithMany(x => x.Users)
+                .UsingEntity<UserRole>(x => x.HasOne<Role>().WithMany().HasForeignKey(role => role.RoleId),
+                    x => x.HasOne<User>().WithMany().HasForeignKey(role => role.UserId));
+            builder.HasData(new List<User>()
+            {
+                new User()
+                {
+                    Id = 1,
+                    Login = "svyatmtk",
+                    Password = "password",
+                    CreatedAt = DateTime.UtcNow,
+                }
+            });
+        }
+    }
+```
+##Interceptors
+Перехватчики изменений в ChangeTracker для автоматического заполнения некоторых полей в записи.
+
+``` c#
+public class DateInterceptor : SaveChangesInterceptor
+    {
+        public override ValueTask<InterceptionResult<int>> SavingChangesAsync(DbContextEventData eventData, InterceptionResult<int> result,
+            CancellationToken cancellationToken = new CancellationToken())
+        {
+            
+            var dbContext = eventData.Context;
+
+            if (dbContext == null)
+            {
+                return base.SavingChangesAsync(eventData, result, cancellationToken);
+            }
+
+            var entries = dbContext.ChangeTracker.Entries<IAuditable>()
+                .Where(x => x.State == EntityState.Added || x.State == EntityState.Modified);
+
+            foreach (var entry in entries)
+            {
+                if (entry.State == EntityState.Added)
+                {
+                    entry.Property(x => x.CreatedAt).CurrentValue = DateTime.UtcNow;
+                }
+
+                if (entry.State == EntityState.Modified)
+                {
+                    entry.Property(X => X.UpdatedAt).CurrentValue = DateTime.UtcNow;
+                }
+            }
+            return base.SavingChangesAsync(eventData, result, cancellationToken);
+        }
+```
+
