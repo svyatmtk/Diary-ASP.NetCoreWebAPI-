@@ -13,3 +13,4 @@ C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\obj\Debug\net8.0\Dia
 C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\obj\Debug\net8.0\refint\Diary.Consumer.dll
 C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\obj\Debug\net8.0\Diary.Consumer.pdb
 C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\obj\Debug\net8.0\ref\Diary.Consumer.dll
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Consumer\obj\Debug\net8.0\Diary.Consumer.sourcelink.json

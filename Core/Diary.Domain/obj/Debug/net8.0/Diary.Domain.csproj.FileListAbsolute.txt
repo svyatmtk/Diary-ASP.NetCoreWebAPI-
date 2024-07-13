@@ -10,3 +10,4 @@ C:\Users\Eugeny\Desktop\Diary\Core\Diary.Domain\obj\Debug\net8.0\Diary.Domain.dl
 C:\Users\Eugeny\Desktop\Diary\Core\Diary.Domain\obj\Debug\net8.0\refint\Diary.Domain.dll
 C:\Users\Eugeny\Desktop\Diary\Core\Diary.Domain\obj\Debug\net8.0\Diary.Domain.pdb
 C:\Users\Eugeny\Desktop\Diary\Core\Diary.Domain\obj\Debug\net8.0\ref\Diary.Domain.dll
+C:\Users\Eugeny\Desktop\Diary\Core\Diary.Domain\obj\Debug\net8.0\Diary.Domain.sourcelink.json

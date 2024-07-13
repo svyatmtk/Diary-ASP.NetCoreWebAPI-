@@ -191,7 +191,7 @@
         </member>
         <member name="M:Diary.Api.Startup.AddAuthenticationAndAuthorization(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
             <summary>
-            Добавление
+            Добавление аутентификации и авторизации
             </summary>
             <param name="services"></param>
         </member>

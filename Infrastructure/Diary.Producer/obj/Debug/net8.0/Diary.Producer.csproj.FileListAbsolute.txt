@@ -15,3 +15,4 @@ C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\obj\Debug\net8.0\Dia
 C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\obj\Debug\net8.0\refint\Diary.Producer.dll
 C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\obj\Debug\net8.0\Diary.Producer.pdb
 C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\obj\Debug\net8.0\ref\Diary.Producer.dll
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.Producer\obj\Debug\net8.0\Diary.Producer.sourcelink.json

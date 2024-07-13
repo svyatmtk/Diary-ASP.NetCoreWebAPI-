@@ -37,9 +37,7 @@ public class ExceptionHandlingMiddleware
             UnauthorizedAccessException _ => new BaseResult()
                 { ErrorMessage = exception.Message, ErrorCode = (int)HttpStatusCode.Unauthorized},
             _ => new BaseResult()
-            {
-                ErrorMessage = "Internal server error. Try again later", ErrorCode = (int)HttpStatusCode.InternalServerError
-            }
+            { ErrorMessage = "Internal server error. Try again later", ErrorCode = (int)HttpStatusCode.InternalServerError }
         };
         httpContext.Response.ContentType = "application/json";
         httpContext.Response.StatusCode = (int)responce.ErrorCode;

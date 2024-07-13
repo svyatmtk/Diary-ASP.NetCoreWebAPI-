@@ -3,6 +3,7 @@ using Diary.Application.Resources;
 using Diary.Domain.Dto.ReportDto;
 using Diary.Domain.Entity;
 using Diary.Domain.Enum;
+using Diary.Domain.Extensions;
 using Diary.Domain.Interfaces.Repositories;
 using Diary.Domain.Interfaces.Services;
 using Diary.Domain.Interfaces.Validations;
@@ -10,6 +11,7 @@ using Diary.Domain.Result;
 using Diary.Domain.Settings;
 using Diary.Producer.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Options;
 using Serilog;
 
@@ -22,12 +24,13 @@ public class ReportService : IReportService
     private readonly IBaseRepository<Report> _reportRepository;
     private readonly IBaseRepository<User> _userRepository;
     private readonly IReportValidator _reportValidator;
+    private readonly IDistributedCache _distributedCache;
     private readonly ILogger _logger;
     private readonly IMapper _mapper;
 
     public ReportService(IBaseRepository<Report> reportRepository, ILogger serilog,
         IBaseRepository<User> userRepository, IReportValidator reportValidator, IMapper mapper,
-        IMessageProducer messageProducer, IOptions<RabbitMqSettings> options)
+        IMessageProducer messageProducer, IOptions<RabbitMqSettings> options, IDistributedCache distributedCache)
     {
         _reportRepository = reportRepository;
         _logger = serilog;
@@ -36,6 +39,7 @@ public class ReportService : IReportService
         _mapper = mapper;
         _messageProducer = messageProducer;
         _options = options;
+        _distributedCache = distributedCache;
     }
 
     /// <inheritdoc />
@@ -90,7 +94,9 @@ public class ReportService : IReportService
                 ErrorCode = (int)ErrorCodes.ReportNotFound
             });
         }
-
+        
+        _distributedCache.SetObject($"Report_{id}", report);
+        
         return Task.FromResult(new BaseResult<ReportDto>()
         {
             Data = report
@@ -98,7 +104,7 @@ public class ReportService : IReportService
     }
 
     /// <inheritdoc />
-    public async Task<BaseResult<ReportDto>> CreateReport(CreateReportDto dto)
+    public async Task<BaseResult<ReportDto>> CreateReportAsync(CreateReportDto dto)
     {
         var user = await _userRepository.GetAll().FirstOrDefaultAsync(x => x.Id == dto.UserId);
         var report = await _reportRepository.GetAll().FirstOrDefaultAsync(x => x.Name == dto.Name);

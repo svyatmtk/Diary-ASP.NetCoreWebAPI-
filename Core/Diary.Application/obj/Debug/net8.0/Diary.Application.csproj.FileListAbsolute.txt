@@ -27,3 +27,4 @@ C:\Users\Eugeny\Desktop\Diary\Core\Diary.Application\bin\Debug\net8.0\Diary.DAL.
 C:\Users\Eugeny\Desktop\Diary\Core\Diary.Application\bin\Debug\net8.0\Diary.Producer.dll
 C:\Users\Eugeny\Desktop\Diary\Core\Diary.Application\bin\Debug\net8.0\Diary.Producer.pdb
 C:\Users\Eugeny\Desktop\Diary\Core\Diary.Application\bin\Debug\net8.0\Diary.DAL.pdb
+C:\Users\Eugeny\Desktop\Diary\Core\Diary.Application\obj\Debug\net8.0\Diary.Application.sourcelink.json

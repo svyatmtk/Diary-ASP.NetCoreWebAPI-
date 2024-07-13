@@ -12,7 +12,7 @@ namespace Diary.Api.Controllers
     /// Контроллер для управления отчётами
     /// </summary>
     [Consumes(MediaTypeNames.Application.Json)]
-    [Authorize(Roles = "User")]
+    //[Authorize(Roles = "User")]
     [ApiController]
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
@@ -89,7 +89,7 @@ namespace Diary.Api.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<BaseResult<ReportDto>>> CreateReportAsync([FromBody] CreateReportDto dto)
         {
-            var report = await _reportService.CreateReport(dto);
+            var report = await _reportService.CreateReportAsync(dto);
 
             if (report.IsSuccess)
             {

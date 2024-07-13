@@ -28,7 +28,7 @@ public interface IReportService
     /// </summary>
     /// <param name="dto"></param>
     /// <returns></returns>
-    Task<BaseResult<ReportDto>> CreateReport(CreateReportDto dto);
+    Task<BaseResult<ReportDto>> CreateReportAsync(CreateReportDto dto);
     
     /// <summary>
     /// Удаление отчёта по id

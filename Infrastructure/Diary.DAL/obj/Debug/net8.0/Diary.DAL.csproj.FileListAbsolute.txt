@@ -13,3 +13,4 @@ C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\obj\Debug\net8.0\Diary.DA
 C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\obj\Debug\net8.0\refint\Diary.DAL.dll
 C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\obj\Debug\net8.0\Diary.DAL.pdb
 C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\obj\Debug\net8.0\ref\Diary.DAL.dll
+C:\Users\Eugeny\Desktop\Diary\Infrastructure\Diary.DAL\obj\Debug\net8.0\Diary.DAL.sourcelink.json
