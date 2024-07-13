@@ -1,0 +1,52 @@
+﻿services:
+  diary.api:
+    image: diary.api
+    build:
+      context: .
+      dockerfile: Presentation/diary.Api/Dockerfile
+  diary.db:
+    image: postgres
+    container_name: diarydb
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=Diary
+    restart: always
+    ports:
+        - "5439:5432"
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.ru
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    restart: always
+    ports:
+        - "5050:80"
+      
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    networks:
+      - mynw
+    
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - ./grafana:/var/lib/grafana
+    depends_on:
+      - prometheus
+    networks:
+      - mynw
+
+networks:
+  mynw:
