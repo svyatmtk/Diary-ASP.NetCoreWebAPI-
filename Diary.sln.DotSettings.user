@@ -3,6 +3,12 @@
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
   &lt;Assembly Path="C:\Users\Eugeny\.nuget\packages\serilog.aspnetcore\8.0.2-dev-00338\lib\net8.0\Serilog.AspNetCore.dll" /&gt;&#xD;
   &lt;Assembly Path="C:\Users\Eugeny\.nuget\packages\microsoft.aspnetcore.openapi\8.0.1\lib\net8.0\Microsoft.AspNetCore.OpenApi.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\Eugeny\.nuget\packages\automapper\13.0.1\lib\net6.0\AutoMapper.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=30585dda_002Dff73_002D4052_002Db034_002Dc3c124577b8a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetReportById_ShouldBe_NotNull" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::46EF160E-09C8-4417-A122-45EAF2E6B7B3::net8.0::Diary.Tests.ReportServiceTests.GetReportById_ShouldBe_NotNull&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=Core_002FDiary_002EApplication_002FResources_002FErrorMessage/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean></wpf:ResourceDictionary>
