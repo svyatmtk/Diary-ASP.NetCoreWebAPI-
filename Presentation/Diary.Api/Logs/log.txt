@@ -33902,3 +33902,882 @@ RETURNING "Id";
 2024-07-14 02:29:56.867 +03:00 [DBG] Disposing connection to database 'Diary' on server 'tcp://localhost:5439'.
 2024-07-14 02:29:56.870 +03:00 [DBG] Disposed connection to database 'Diary' on server 'tcp://localhost:5439' (3ms).
 2024-07-14 02:29:56.873 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7021/api/v1/Report/new-report - 200 null application/json; charset=utf-8 2666.8921ms
+2024-07-16 16:56:17.716 +03:00 [DBG] Registered model binder providers, in the following order: ["Asp.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-07-16 16:56:17.932 +03:00 [DBG] Hosting starting
+2024-07-16 16:56:18.237 +03:00 [INF] User profile is available. Using 'C:\Users\Eugeny\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 16:56:18.623 +03:00 [DBG] Reading data from file 'C:\Users\Eugeny\AppData\Local\ASP.NET\DataProtection-Keys\key-0d8c9b8e-63ef-4b0b-b493-0986a6d9e62c.xml'.
+2024-07-16 16:56:18.645 +03:00 [DBG] Reading data from file 'C:\Users\Eugeny\AppData\Local\ASP.NET\DataProtection-Keys\key-d08e414e-a56c-4028-ab53-ada900b97d9b.xml'.
+2024-07-16 16:56:18.662 +03:00 [DBG] Reading data from file 'C:\Users\Eugeny\AppData\Local\ASP.NET\DataProtection-Keys\key-e84327ca-0e69-40db-8715-acb4aff461a3.xml'.
+2024-07-16 16:56:18.696 +03:00 [DBG] Found key {0d8c9b8e-63ef-4b0b-b493-0986a6d9e62c}.
+2024-07-16 16:56:18.703 +03:00 [DBG] Found key {d08e414e-a56c-4028-ab53-ada900b97d9b}.
+2024-07-16 16:56:18.705 +03:00 [DBG] Found key {e84327ca-0e69-40db-8715-acb4aff461a3}.
+2024-07-16 16:56:18.714 +03:00 [DBG] Considering key {d08e414e-a56c-4028-ab53-ada900b97d9b} with expiration date 2024-07-24 12:45:18Z as default key.
+2024-07-16 16:56:18.723 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-16 16:56:18.728 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-07-16 16:56:18.731 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-16 16:56:18.739 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-07-16 16:56:18.744 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-07-16 16:56:18.748 +03:00 [DBG] Using key {d08e414e-a56c-4028-ab53-ada900b97d9b} as the default key.
+2024-07-16 16:56:18.754 +03:00 [DBG] Key ring with default key {d08e414e-a56c-4028-ab53-ada900b97d9b} was loaded during application startup.
+2024-07-16 16:56:19.279 +03:00 [INF] Now listening on: https://localhost:7021
+2024-07-16 16:56:19.280 +03:00 [INF] Now listening on: http://localhost:5268
+2024-07-16 16:56:19.281 +03:00 [DBG] Loaded hosting startup assembly Diary.Api
+2024-07-16 16:56:19.283 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 16:56:19.284 +03:00 [INF] Hosting environment: Development
+2024-07-16 16:56:19.284 +03:00 [INF] Content root path: C:\Users\Eugeny\Desktop\Diary\Presentation\Diary.Api
+2024-07-16 16:56:19.285 +03:00 [DBG] Hosting started
+2024-07-16 16:56:19.420 +03:00 [DBG] Connection id "0HN55JS8QAMEF" accepted.
+2024-07-16 16:56:19.424 +03:00 [DBG] Connection id "0HN55JS8QAMEF" started.
+2024-07-16 16:56:19.449 +03:00 [DBG] Connection id "0HN55JS8QAMEG" accepted.
+2024-07-16 16:56:19.451 +03:00 [DBG] Connection id "0HN55JS8QAMEG" started.
+2024-07-16 16:56:19.452 +03:00 [DBG] Connection id "0HN55JS8QAMEH" accepted.
+2024-07-16 16:56:19.454 +03:00 [DBG] Connection id "0HN55JS8QAMEH" started.
+2024-07-16 16:56:19.556 +03:00 [DBG] Connection id "0HN55JS8QAMEG" received FIN.
+2024-07-16 16:56:19.556 +03:00 [DBG] Connection id "0HN55JS8QAMEH" received FIN.
+2024-07-16 16:56:19.583 +03:00 [DBG] Connection 0HN55JS8QAMEH established using the following protocol: "Tls12"
+2024-07-16 16:56:19.583 +03:00 [DBG] Connection 0HN55JS8QAMEG established using the following protocol: "Tls12"
+2024-07-16 16:56:19.583 +03:00 [DBG] Connection 0HN55JS8QAMEF established using the following protocol: "Tls12"
+2024-07-16 16:56:19.601 +03:00 [DBG] Connection id "0HN55JS8QAMEH" is closed. The last processed stream ID was 0.
+2024-07-16 16:56:19.601 +03:00 [DBG] Connection id "0HN55JS8QAMEG" is closed. The last processed stream ID was 0.
+2024-07-16 16:56:19.604 +03:00 [DBG] Connection id "0HN55JS8QAMEH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 16:56:19.605 +03:00 [DBG] Connection id "0HN55JS8QAMEG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 16:56:19.610 +03:00 [DBG] The connection queue processing loop for 0HN55JS8QAMEH completed.
+2024-07-16 16:56:19.610 +03:00 [DBG] The connection queue processing loop for 0HN55JS8QAMEG completed.
+2024-07-16 16:56:19.618 +03:00 [DBG] Connection id "0HN55JS8QAMEH" stopped.
+2024-07-16 16:56:19.618 +03:00 [DBG] Connection id "0HN55JS8QAMEG" stopped.
+2024-07-16 16:56:19.694 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7021/swagger - null null
+2024-07-16 16:56:19.698 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-07-16 16:56:19.771 +03:00 [DBG] No candidates found for the request path '/swagger'
+2024-07-16 16:56:19.773 +03:00 [DBG] Request did not match any endpoints
+2024-07-16 16:56:19.938 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 16:56:20.052 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7021/swagger - 301 0 null 364.0225ms
+2024-07-16 16:56:20.061 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7021/swagger/index.html - null null
+2024-07-16 16:56:20.064 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-07-16 16:56:20.065 +03:00 [DBG] Request did not match any endpoints
+2024-07-16 16:56:20.067 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 16:56:20.184 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7021/swagger/index.html - 200 null text/html;charset=utf-8 123.0964ms
+2024-07-16 16:56:20.370 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7021/swagger/swagger-ui.css - null null
+2024-07-16 16:56:20.370 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7021/swagger/swagger-ui-standalone-preset.js - null null
+2024-07-16 16:56:20.370 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7021/swagger/swagger-ui-bundle.js - null null
+2024-07-16 16:56:20.372 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2024-07-16 16:56:20.374 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2024-07-16 16:56:20.377 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2024-07-16 16:56:20.377 +03:00 [DBG] Request did not match any endpoints
+2024-07-16 16:56:20.378 +03:00 [DBG] Request did not match any endpoints
+2024-07-16 16:56:20.380 +03:00 [DBG] Request did not match any endpoints
+2024-07-16 16:56:20.381 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 16:56:20.381 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 16:56:20.381 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 16:56:20.424 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-07-16 16:56:20.430 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-07-16 16:56:20.434 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7021/swagger/swagger-ui.css - 200 152034 text/css 64.6177ms
+2024-07-16 16:56:20.436 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7021/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 66.0484ms
+2024-07-16 16:56:20.497 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-07-16 16:56:20.499 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7021/swagger/swagger-ui-bundle.js - 200 1456682 text/javascript 128.8752ms
+2024-07-16 16:56:20.885 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7021/swagger/v1/swagger.json - null null
+2024-07-16 16:56:20.887 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-07-16 16:56:20.888 +03:00 [DBG] Request did not match any endpoints
+2024-07-16 16:56:20.889 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 16:56:20.914 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7021/swagger/favicon-32x32.png - null null
+2024-07-16 16:56:20.922 +03:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2024-07-16 16:56:20.924 +03:00 [DBG] Request did not match any endpoints
+2024-07-16 16:56:20.925 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 16:56:20.927 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-07-16 16:56:20.929 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7021/swagger/favicon-32x32.png - 200 628 image/png 14.6621ms
+2024-07-16 16:56:21.116 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7021/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 231.592ms
+2024-07-16 17:36:29.119 +03:00 [DBG] Registered model binder providers, in the following order: ["Asp.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-07-16 17:36:29.296 +03:00 [DBG] Hosting starting
+2024-07-16 17:36:29.354 +03:00 [INF] User profile is available. Using 'C:\Users\Eugeny\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 17:36:29.604 +03:00 [DBG] Reading data from file 'C:\Users\Eugeny\AppData\Local\ASP.NET\DataProtection-Keys\key-0d8c9b8e-63ef-4b0b-b493-0986a6d9e62c.xml'.
+2024-07-16 17:36:29.611 +03:00 [DBG] Reading data from file 'C:\Users\Eugeny\AppData\Local\ASP.NET\DataProtection-Keys\key-d08e414e-a56c-4028-ab53-ada900b97d9b.xml'.
+2024-07-16 17:36:29.612 +03:00 [DBG] Reading data from file 'C:\Users\Eugeny\AppData\Local\ASP.NET\DataProtection-Keys\key-e84327ca-0e69-40db-8715-acb4aff461a3.xml'.
+2024-07-16 17:36:29.620 +03:00 [DBG] Found key {0d8c9b8e-63ef-4b0b-b493-0986a6d9e62c}.
+2024-07-16 17:36:29.625 +03:00 [DBG] Found key {d08e414e-a56c-4028-ab53-ada900b97d9b}.
+2024-07-16 17:36:29.626 +03:00 [DBG] Found key {e84327ca-0e69-40db-8715-acb4aff461a3}.
+2024-07-16 17:36:29.634 +03:00 [DBG] Considering key {d08e414e-a56c-4028-ab53-ada900b97d9b} with expiration date 2024-07-24 12:45:18Z as default key.
+2024-07-16 17:36:29.639 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-16 17:36:29.642 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-07-16 17:36:29.645 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-16 17:36:29.650 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-07-16 17:36:29.653 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-07-16 17:36:29.655 +03:00 [DBG] Using key {d08e414e-a56c-4028-ab53-ada900b97d9b} as the default key.
+2024-07-16 17:36:29.658 +03:00 [DBG] Key ring with default key {d08e414e-a56c-4028-ab53-ada900b97d9b} was loaded during application startup.
+2024-07-16 17:36:29.907 +03:00 [INF] Now listening on: https://localhost:7021
+2024-07-16 17:36:29.908 +03:00 [INF] Now listening on: http://localhost:5268
+2024-07-16 17:36:29.909 +03:00 [DBG] Loaded hosting startup assembly Diary.Api
+2024-07-16 17:36:29.910 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 17:36:29.911 +03:00 [INF] Hosting environment: Development
+2024-07-16 17:36:29.912 +03:00 [INF] Content root path: C:\Users\Eugeny\Desktop\Diary\Presentation\Diary.Api
+2024-07-16 17:36:29.913 +03:00 [DBG] Hosting started
+2024-07-16 17:36:32.832 +03:00 [DBG] Connection id "0HN55KIO2DBN0" accepted.
+2024-07-16 17:36:32.834 +03:00 [DBG] Connection id "0HN55KIO2DBN0" started.
+2024-07-16 17:36:32.902 +03:00 [DBG] Connection 0HN55KIO2DBN0 established using the following protocol: "Tls12"
+2024-07-16 17:36:32.957 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7021/ - null null
+2024-07-16 17:36:32.961 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-07-16 17:36:33.011 +03:00 [DBG] No candidates found for the request path '/'
+2024-07-16 17:36:33.013 +03:00 [DBG] Request did not match any endpoints
+2024-07-16 17:36:33.125 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 17:36:33.190 +03:00 [DBG] The request path  does not match the path filter
+2024-07-16 17:36:33.202 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7021/ - 404 0 null 251.138ms
+2024-07-16 17:36:33.207 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7021/, Response status code: 404
+2024-07-16 17:36:52.985 +03:00 [DBG] Registered model binder providers, in the following order: ["Asp.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-07-16 17:36:53.091 +03:00 [DBG] Hosting starting
+2024-07-16 17:36:53.105 +03:00 [INF] User profile is available. Using 'C:\Users\Eugeny\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 17:36:53.261 +03:00 [DBG] Reading data from file 'C:\Users\Eugeny\AppData\Local\ASP.NET\DataProtection-Keys\key-0d8c9b8e-63ef-4b0b-b493-0986a6d9e62c.xml'.
+2024-07-16 17:36:53.266 +03:00 [DBG] Reading data from file 'C:\Users\Eugeny\AppData\Local\ASP.NET\DataProtection-Keys\key-d08e414e-a56c-4028-ab53-ada900b97d9b.xml'.
+2024-07-16 17:36:53.268 +03:00 [DBG] Reading data from file 'C:\Users\Eugeny\AppData\Local\ASP.NET\DataProtection-Keys\key-e84327ca-0e69-40db-8715-acb4aff461a3.xml'.
+2024-07-16 17:36:53.273 +03:00 [DBG] Found key {0d8c9b8e-63ef-4b0b-b493-0986a6d9e62c}.
+2024-07-16 17:36:53.277 +03:00 [DBG] Found key {d08e414e-a56c-4028-ab53-ada900b97d9b}.
+2024-07-16 17:36:53.278 +03:00 [DBG] Found key {e84327ca-0e69-40db-8715-acb4aff461a3}.
+2024-07-16 17:36:53.288 +03:00 [DBG] Considering key {d08e414e-a56c-4028-ab53-ada900b97d9b} with expiration date 2024-07-24 12:45:18Z as default key.
+2024-07-16 17:36:53.292 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-16 17:36:53.296 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-07-16 17:36:53.298 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-16 17:36:53.303 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-07-16 17:36:53.305 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-07-16 17:36:53.307 +03:00 [DBG] Using key {d08e414e-a56c-4028-ab53-ada900b97d9b} as the default key.
+2024-07-16 17:36:53.308 +03:00 [DBG] Key ring with default key {d08e414e-a56c-4028-ab53-ada900b97d9b} was loaded during application startup.
+2024-07-16 17:36:53.446 +03:00 [INF] Now listening on: https://localhost:7021
+2024-07-16 17:36:53.447 +03:00 [INF] Now listening on: http://localhost:5268
+2024-07-16 17:36:53.448 +03:00 [DBG] Loaded hosting startup assembly Diary.Api
+2024-07-16 17:36:53.448 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 17:36:53.449 +03:00 [INF] Hosting environment: Development
+2024-07-16 17:36:53.450 +03:00 [INF] Content root path: C:\Users\Eugeny\Desktop\Diary\Presentation\Diary.Api
+2024-07-16 17:36:53.450 +03:00 [DBG] Hosting started
+2024-07-16 17:36:53.520 +03:00 [DBG] Connection id "0HN55KIU7N6J6" received FIN.
+2024-07-16 17:36:53.526 +03:00 [DBG] Connection id "0HN55KIU7N6J6" accepted.
+2024-07-16 17:36:53.527 +03:00 [DBG] Connection id "0HN55KIU7N6J6" started.
+2024-07-16 17:36:53.537 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-07-16 17:36:53.551 +03:00 [DBG] Connection id "0HN55KIU7N6J6" stopped.
+2024-07-16 17:36:53.554 +03:00 [DBG] Connection id "0HN55KIU7N6J6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 17:36:53.711 +03:00 [DBG] Connection id "0HN55KIU7N6J7" accepted.
+2024-07-16 17:36:53.713 +03:00 [DBG] Connection id "0HN55KIU7N6J7" started.
+2024-07-16 17:36:53.754 +03:00 [DBG] Connection 0HN55KIU7N6J7 established using the following protocol: "Tls12"
+2024-07-16 17:36:53.796 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7021/swagger/index.html - null null
+2024-07-16 17:36:53.799 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-07-16 17:36:53.849 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-07-16 17:36:53.850 +03:00 [DBG] Request did not match any endpoints
+2024-07-16 17:36:53.884 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 17:36:54.039 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7021/swagger/index.html - 200 null text/html;charset=utf-8 248.3541ms
+2024-07-16 17:36:54.164 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7021/swagger/swagger-ui-standalone-preset.js - null null
+2024-07-16 17:36:54.164 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7021/swagger/swagger-ui-bundle.js - null null
+2024-07-16 17:36:54.164 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7021/swagger/swagger-ui.css - null null
+2024-07-16 17:36:54.168 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2024-07-16 17:36:54.168 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2024-07-16 17:36:54.170 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2024-07-16 17:36:54.171 +03:00 [DBG] Request did not match any endpoints
+2024-07-16 17:36:54.172 +03:00 [DBG] Request did not match any endpoints
+2024-07-16 17:36:54.173 +03:00 [DBG] Request did not match any endpoints
+2024-07-16 17:36:54.175 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 17:36:54.175 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 17:36:54.175 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 17:36:54.194 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-07-16 17:36:54.194 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-07-16 17:36:54.197 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7021/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 32.671ms
+2024-07-16 17:36:54.197 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7021/swagger/swagger-ui.css - 200 152034 text/css 33.1465ms
+2024-07-16 17:36:54.234 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-07-16 17:36:54.236 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7021/swagger/swagger-ui-bundle.js - 200 1456682 text/javascript 71.6718ms
+2024-07-16 17:36:54.582 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7021/swagger/v1/swagger.json - null null
+2024-07-16 17:36:54.593 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-07-16 17:36:54.593 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7021/swagger/favicon-32x32.png - null null
+2024-07-16 17:36:54.594 +03:00 [DBG] Request did not match any endpoints
+2024-07-16 17:36:54.597 +03:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2024-07-16 17:36:54.598 +03:00 [DBG] Request did not match any endpoints
+2024-07-16 17:36:54.600 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 17:36:54.600 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 17:36:54.602 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-07-16 17:36:54.603 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7021/swagger/favicon-32x32.png - 200 628 image/png 9.9623ms
+2024-07-16 17:36:54.783 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7021/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 200.9249ms
+2024-07-16 17:37:02.133 +03:00 [INF] Application is shutting down...
+2024-07-16 17:37:02.134 +03:00 [DBG] Hosting stopping
+2024-07-16 17:37:02.143 +03:00 [DBG] Connection id "0HN55KIU7N6J7" is closing.
+2024-07-16 17:37:02.148 +03:00 [DBG] Connection id "0HN55KIU7N6J7" is closed. The last processed stream ID was 11.
+2024-07-16 17:37:02.149 +03:00 [DBG] Connection id "0HN55KIU7N6J7" received FIN.
+2024-07-16 17:37:02.150 +03:00 [DBG] Connection id "0HN55KIU7N6J7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-16 17:37:02.151 +03:00 [DBG] The connection queue processing loop for 0HN55KIU7N6J7 completed.
+2024-07-16 17:37:02.153 +03:00 [DBG] Connection id "0HN55KIU7N6J7" stopped.
+2024-07-16 17:37:02.158 +03:00 [DBG] Hosting stopped
+2024-07-16 17:49:31.602 +03:00 [DBG] Registered model binder providers, in the following order: ["Asp.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-07-16 17:49:31.784 +03:00 [DBG] Hosting starting
+2024-07-16 17:49:31.839 +03:00 [INF] User profile is available. Using 'C:\Users\Eugeny\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 17:49:32.095 +03:00 [DBG] Reading data from file 'C:\Users\Eugeny\AppData\Local\ASP.NET\DataProtection-Keys\key-0d8c9b8e-63ef-4b0b-b493-0986a6d9e62c.xml'.
+2024-07-16 17:49:32.101 +03:00 [DBG] Reading data from file 'C:\Users\Eugeny\AppData\Local\ASP.NET\DataProtection-Keys\key-d08e414e-a56c-4028-ab53-ada900b97d9b.xml'.
+2024-07-16 17:49:32.103 +03:00 [DBG] Reading data from file 'C:\Users\Eugeny\AppData\Local\ASP.NET\DataProtection-Keys\key-e84327ca-0e69-40db-8715-acb4aff461a3.xml'.
+2024-07-16 17:49:32.108 +03:00 [DBG] Found key {0d8c9b8e-63ef-4b0b-b493-0986a6d9e62c}.
+2024-07-16 17:49:32.113 +03:00 [DBG] Found key {d08e414e-a56c-4028-ab53-ada900b97d9b}.
+2024-07-16 17:49:32.114 +03:00 [DBG] Found key {e84327ca-0e69-40db-8715-acb4aff461a3}.
+2024-07-16 17:49:32.122 +03:00 [DBG] Considering key {d08e414e-a56c-4028-ab53-ada900b97d9b} with expiration date 2024-07-24 12:45:18Z as default key.
+2024-07-16 17:49:32.126 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-16 17:49:32.130 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-07-16 17:49:32.133 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-07-16 17:49:32.138 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-07-16 17:49:32.140 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-07-16 17:49:32.142 +03:00 [DBG] Using key {d08e414e-a56c-4028-ab53-ada900b97d9b} as the default key.
+2024-07-16 17:49:32.144 +03:00 [DBG] Key ring with default key {d08e414e-a56c-4028-ab53-ada900b97d9b} was loaded during application startup.
+2024-07-16 17:49:32.414 +03:00 [INF] Now listening on: https://localhost:7021
+2024-07-16 17:49:32.417 +03:00 [INF] Now listening on: http://localhost:5268
+2024-07-16 17:49:32.419 +03:00 [DBG] Loaded hosting startup assembly Diary.Api
+2024-07-16 17:49:32.421 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 17:49:32.422 +03:00 [INF] Hosting environment: Development
+2024-07-16 17:49:32.424 +03:00 [INF] Content root path: C:\Users\Eugeny\Desktop\Diary\Presentation\Diary.Api
+2024-07-16 17:49:32.425 +03:00 [DBG] Hosting started
+2024-07-16 17:49:32.483 +03:00 [DBG] Connection id "0HN55KQ0DO4T0" accepted.
+2024-07-16 17:49:32.485 +03:00 [DBG] Connection id "0HN55KQ0DO4T0" started.
+2024-07-16 17:49:32.555 +03:00 [DBG] Connection 0HN55KQ0DO4T0 established using the following protocol: "Tls12"
+2024-07-16 17:49:32.661 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7021/swagger/index.html - null null
+2024-07-16 17:49:32.665 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-07-16 17:49:32.716 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-07-16 17:49:32.718 +03:00 [DBG] Request did not match any endpoints
+2024-07-16 17:49:32.826 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 17:49:33.005 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7021/swagger/index.html - 200 null text/html;charset=utf-8 349.0501ms
+2024-07-16 17:49:33.534 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7021/swagger/v1/swagger.json - null null
+2024-07-16 17:49:33.537 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-07-16 17:49:33.539 +03:00 [DBG] Request did not match any endpoints
+2024-07-16 17:49:33.542 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 17:49:33.724 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7021/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 190.1695ms
+2024-07-16 17:49:41.468 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7021/api/v1/Report/all-reports/1 - null null
+2024-07-16 17:49:41.532 +03:00 [DBG] 1 candidate(s) found for the request path '/api/v1/Report/all-reports/1'
+2024-07-16 17:49:41.538 +03:00 [DBG] Endpoint 'Diary.Api.Controllers.ReportController.GetReportsAsync (Diary.Api)' with route pattern 'api/v{version:apiVersion}/Report/all-reports/{userId:long}' is valid for the request path '/api/v1/Report/all-reports/1'
+2024-07-16 17:49:41.542 +03:00 [DBG] Request matched endpoint 'Diary.Api.Controllers.ReportController.GetReportsAsync (Diary.Api)'
+2024-07-16 17:49:41.545 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 17:49:41.547 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-07-16 17:49:41.548 +03:00 [INF] Executing endpoint 'Diary.Api.Controllers.ReportController.GetReportsAsync (Diary.Api)'
+2024-07-16 17:49:41.573 +03:00 [INF] Route matched with {action = "GetReports", controller = "Report"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Diary.Domain.Result.CollectionResult`1[Diary.Domain.Dto.ReportDto.ReportDto]]] GetReportsAsync(Int64) on controller Diary.Api.Controllers.ReportController (Diary.Api).
+2024-07-16 17:49:41.576 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-07-16 17:49:41.578 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ConsumesAttribute"]
+2024-07-16 17:49:41.580 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-07-16 17:49:41.582 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-07-16 17:49:41.584 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-07-16 17:49:41.588 +03:00 [DBG] Executing controller factory for controller Diary.Api.Controllers.ReportController (Diary.Api)
+2024-07-16 17:49:42.109 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-07-16 17:49:42.885 +03:00 [DBG] The index {'RoleId'} was not created on entity type 'UserRole' as the properties are already covered by the index {'RoleId', 'UserId'}.
+2024-07-16 17:49:43.256 +03:00 [DBG] Entity Framework Core 9.0.0-preview.3.24172.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.0-preview.3+f38a96ceef14e36b11db9bf0111617b30f06c3bb' with options: None
+2024-07-16 17:49:43.276 +03:00 [DBG] Creating DbConnection.
+2024-07-16 17:49:43.312 +03:00 [DBG] Created DbConnection. (35ms).
+2024-07-16 17:49:43.319 +03:00 [DBG] Opening connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:49:43.434 +03:00 [DBG] Opened connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:49:43.441 +03:00 [DBG] Closing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:49:43.454 +03:00 [DBG] Closed connection to database 'Diary' on server 'tcp://localhost:5439' (8ms).
+2024-07-16 17:49:43.464 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-07-16 17:49:43.472 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (5ms).
+2024-07-16 17:49:43.475 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (11ms).
+2024-07-16 17:49:43.477 +03:00 [DBG] Opening connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:49:43.502 +03:00 [DBG] Opened connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:49:43.511 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2024-07-16 17:49:43.629 +03:00 [INF] Executed DbCommand (119ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2024-07-16 17:49:43.634 +03:00 [DBG] Closing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:49:43.638 +03:00 [DBG] Closed connection to database 'Diary' on server 'tcp://localhost:5439' (3ms).
+2024-07-16 17:49:43.760 +03:00 [DBG] Executed controller factory for controller Diary.Api.Controllers.ReportController (Diary.Api)
+2024-07-16 17:49:43.765 +03:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int64' ...
+2024-07-16 17:49:43.768 +03:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int64' using the name 'userId' in request data ...
+2024-07-16 17:49:43.771 +03:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int64'.
+2024-07-16 17:49:43.772 +03:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int64'.
+2024-07-16 17:49:43.773 +03:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int64' ...
+2024-07-16 17:49:43.776 +03:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int64'.
+2024-07-16 17:49:43.782 +03:00 [INF] Executing action method Diary.Api.Controllers.ReportController.GetReportsAsync (Diary.Api) - Validation state: "Valid"
+2024-07-16 17:49:48.020 +03:00 [DBG] Compiling query expression: 
+'DbSet<Report>()
+    .Where(x => x.UserId == __request_UserId_0)
+    .Select(x => new ReportDto(
+        x.Id, 
+        x.Name, 
+        x.Description, 
+        x.CreatedAt.ToLongDateString()
+    ))'
+2024-07-16 17:49:48.288 +03:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<ReportDto>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> 0
+            1 -> 1
+            2 -> 2
+            3 -> 3
+        SELECT r.Id, r.Name, r.Description, r.CreatedAt
+        FROM Report AS r
+        WHERE r.UserId == @__request_UserId_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, ReportDto>, 
+    Diary.DAL.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-07-16 17:49:48.324 +03:00 [DBG] Opening connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:49:48.327 +03:00 [DBG] Opened connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:49:48.329 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-07-16 17:49:48.330 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-07-16 17:49:48.336 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (7ms).
+2024-07-16 17:49:48.340 +03:00 [DBG] Executing DbCommand [Parameters=[@__request_UserId_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."Name", r."Description", r."CreatedAt"
+FROM "Report" AS r
+WHERE r."UserId" = @__request_UserId_0
+2024-07-16 17:49:48.366 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[@__request_UserId_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."Name", r."Description", r."CreatedAt"
+FROM "Report" AS r
+WHERE r."UserId" = @__request_UserId_0
+2024-07-16 17:49:48.499 +03:00 [DBG] Closing data reader to 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:49:48.501 +03:00 [DBG] A data reader for 'Diary' on server 'tcp://localhost:5439' is being disposed after spending 131ms reading results.
+2024-07-16 17:49:48.506 +03:00 [DBG] Closing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:49:48.507 +03:00 [DBG] Closed connection to database 'Diary' on server 'tcp://localhost:5439' (1ms).
+2024-07-16 17:50:08.900 +03:00 [INF] Executed action method Diary.Api.Controllers.ReportController.GetReportsAsync (Diary.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 25113.6648ms.
+2024-07-16 17:50:08.912 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-07-16 17:50:08.917 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-07-16 17:50:08.919 +03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-07-16 17:50:08.920 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-07-16 17:50:08.921 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-07-16 17:50:08.922 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-07-16 17:50:08.924 +03:00 [INF] Executing OkObjectResult, writing value of type 'Diary.Domain.Result.CollectionResult`1[[Diary.Domain.Dto.ReportDto.ReportDto, Diary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-16 17:50:08.960 +03:00 [INF] Executed action Diary.Api.Controllers.ReportController.GetReportsAsync (Diary.Api) in 27372.14ms
+2024-07-16 17:50:08.962 +03:00 [INF] Executed endpoint 'Diary.Api.Controllers.ReportController.GetReportsAsync (Diary.Api)'
+2024-07-16 17:50:08.965 +03:00 [DBG] 'ApplicationDbContext' disposed.
+2024-07-16 17:50:08.971 +03:00 [DBG] Disposing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:50:08.973 +03:00 [DBG] Disposed connection to database 'Diary' on server 'tcp://localhost:5439' (2ms).
+2024-07-16 17:50:08.975 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7021/api/v1/Report/all-reports/1 - 200 null application/json; charset=utf-8 27507.0417ms
+2024-07-16 17:53:21.812 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7021/api/v1/Report/one-report/1 - null null
+2024-07-16 17:53:21.829 +03:00 [DBG] 1 candidate(s) found for the request path '/api/v1/Report/one-report/1'
+2024-07-16 17:53:21.831 +03:00 [DBG] Endpoint 'Diary.Api.Controllers.ReportController.GetReportAsync (Diary.Api)' with route pattern 'api/v{version:apiVersion}/Report/one-report/{id:long}' is valid for the request path '/api/v1/Report/one-report/1'
+2024-07-16 17:53:21.833 +03:00 [DBG] Request matched endpoint 'Diary.Api.Controllers.ReportController.GetReportAsync (Diary.Api)'
+2024-07-16 17:53:21.834 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 17:53:21.835 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-07-16 17:53:21.836 +03:00 [INF] Executing endpoint 'Diary.Api.Controllers.ReportController.GetReportAsync (Diary.Api)'
+2024-07-16 17:53:21.840 +03:00 [INF] Route matched with {action = "GetReport", controller = "Report"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Diary.Domain.Result.BaseResult`1[Diary.Domain.Dto.ReportDto.ReportDto]]] GetReportAsync(Int64) on controller Diary.Api.Controllers.ReportController (Diary.Api).
+2024-07-16 17:53:21.842 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-07-16 17:53:21.844 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ConsumesAttribute"]
+2024-07-16 17:53:21.845 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-07-16 17:53:21.847 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-07-16 17:53:21.849 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-07-16 17:53:21.851 +03:00 [DBG] Executing controller factory for controller Diary.Api.Controllers.ReportController (Diary.Api)
+2024-07-16 17:53:21.867 +03:00 [DBG] Entity Framework Core 9.0.0-preview.3.24172.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.0-preview.3+f38a96ceef14e36b11db9bf0111617b30f06c3bb' with options: None
+2024-07-16 17:53:21.871 +03:00 [DBG] Creating DbConnection.
+2024-07-16 17:53:21.872 +03:00 [DBG] Created DbConnection. (0ms).
+2024-07-16 17:53:21.873 +03:00 [DBG] Opening connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:53:21.890 +03:00 [DBG] Opened connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:53:21.891 +03:00 [DBG] Closing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:53:21.893 +03:00 [DBG] Closed connection to database 'Diary' on server 'tcp://localhost:5439' (1ms).
+2024-07-16 17:53:21.895 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-07-16 17:53:21.897 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2024-07-16 17:53:21.899 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (3ms).
+2024-07-16 17:53:21.900 +03:00 [DBG] Opening connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:53:21.901 +03:00 [DBG] Opened connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:53:21.903 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2024-07-16 17:53:21.908 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2024-07-16 17:53:21.910 +03:00 [DBG] Closing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:53:21.912 +03:00 [DBG] Closed connection to database 'Diary' on server 'tcp://localhost:5439' (1ms).
+2024-07-16 17:53:21.914 +03:00 [DBG] Executed controller factory for controller Diary.Api.Controllers.ReportController (Diary.Api)
+2024-07-16 17:53:21.916 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int64' ...
+2024-07-16 17:53:21.917 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int64' using the name 'id' in request data ...
+2024-07-16 17:53:21.919 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int64'.
+2024-07-16 17:53:21.920 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int64'.
+2024-07-16 17:53:21.921 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int64' ...
+2024-07-16 17:53:21.922 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int64'.
+2024-07-16 17:53:21.923 +03:00 [INF] Executing action method Diary.Api.Controllers.ReportController.GetReportAsync (Diary.Api) - Validation state: "Valid"
+2024-07-16 17:53:24.535 +03:00 [DBG] Compiling query expression: 
+'DbSet<Report>()'
+2024-07-16 17:53:24.574 +03:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Report>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Report.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Report.CreatedAt (DateTime) Required, 1], [Property: Report.CreatedBy (long) Required, 2], [Property: Report.Description (string) Required MaxLength(2000), 3], [Property: Report.Name (string) Required MaxLength(100), 4], [Property: Report.UpdatedAt (DateTime?), 5], [Property: Report.UpdatedBy (long?), 6], [Property: Report.UserId (long) Required FK Index, 7] }
+        SELECT r.Id, r.CreatedAt, r.CreatedBy, r.Description, r.Name, r.UpdatedAt, r.UpdatedBy, r.UserId
+        FROM Report AS r), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Report>, 
+    Diary.DAL.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-07-16 17:53:24.578 +03:00 [DBG] Opening connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:53:24.579 +03:00 [DBG] Opened connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:53:24.581 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-07-16 17:53:24.581 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-07-16 17:53:24.582 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-07-16 17:53:24.583 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."CreatedBy", r."Description", r."Name", r."UpdatedAt", r."UpdatedBy", r."UserId"
+FROM "Report" AS r
+2024-07-16 17:53:24.587 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."CreatedBy", r."Description", r."Name", r."UpdatedAt", r."UpdatedBy", r."UserId"
+FROM "Report" AS r
+2024-07-16 17:53:24.605 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Report' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-16 17:53:24.633 +03:00 [DBG] Closing data reader to 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:53:24.635 +03:00 [DBG] A data reader for 'Diary' on server 'tcp://localhost:5439' is being disposed after spending 46ms reading results.
+2024-07-16 17:53:24.636 +03:00 [DBG] Closing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:53:24.637 +03:00 [DBG] Closed connection to database 'Diary' on server 'tcp://localhost:5439' (0ms).
+2024-07-16 17:53:31.699 +03:00 [INF] Executed action method Diary.Api.Controllers.ReportController.GetReportAsync (Diary.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9775.1474ms.
+2024-07-16 17:53:31.701 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-07-16 17:53:31.703 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-07-16 17:53:31.704 +03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-07-16 17:53:31.705 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-07-16 17:53:31.706 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-07-16 17:53:31.707 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-07-16 17:53:31.708 +03:00 [INF] Executing OkObjectResult, writing value of type 'Diary.Domain.Result.BaseResult`1[[Diary.Domain.Dto.ReportDto.ReportDto, Diary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-16 17:53:31.711 +03:00 [INF] Executed action Diary.Api.Controllers.ReportController.GetReportAsync (Diary.Api) in 9859.9662ms
+2024-07-16 17:53:31.713 +03:00 [INF] Executed endpoint 'Diary.Api.Controllers.ReportController.GetReportAsync (Diary.Api)'
+2024-07-16 17:53:31.714 +03:00 [DBG] 'ApplicationDbContext' disposed.
+2024-07-16 17:53:31.715 +03:00 [DBG] Disposing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 17:53:31.716 +03:00 [DBG] Disposed connection to database 'Diary' on server 'tcp://localhost:5439' (1ms).
+2024-07-16 17:53:31.717 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7021/api/v1/Report/one-report/1 - 200 null application/json; charset=utf-8 9905.1882ms
+2024-07-16 18:22:03.214 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7021/api/v1/Report/new-report - application/json 90
+2024-07-16 18:22:03.253 +03:00 [DBG] 1 candidate(s) found for the request path '/api/v1/Report/new-report'
+2024-07-16 18:22:03.254 +03:00 [DBG] Endpoint 'Diary.Api.Controllers.ReportController.CreateReportAsync (Diary.Api)' with route pattern 'api/v{version:apiVersion}/Report/new-report' is valid for the request path '/api/v1/Report/new-report'
+2024-07-16 18:22:03.255 +03:00 [DBG] Request matched endpoint 'Diary.Api.Controllers.ReportController.CreateReportAsync (Diary.Api)'
+2024-07-16 18:22:03.256 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 18:22:03.258 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-07-16 18:22:03.266 +03:00 [DBG] The request has an origin header: 'https://localhost:7021'.
+2024-07-16 18:22:03.267 +03:00 [INF] CORS policy execution successful.
+2024-07-16 18:22:03.269 +03:00 [INF] Executing endpoint 'Diary.Api.Controllers.ReportController.CreateReportAsync (Diary.Api)'
+2024-07-16 18:22:03.272 +03:00 [INF] Route matched with {action = "CreateReport", controller = "Report"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Diary.Domain.Result.BaseResult`1[Diary.Domain.Dto.ReportDto.ReportDto]]] CreateReportAsync(Diary.Domain.Dto.ReportDto.CreateReportDto) on controller Diary.Api.Controllers.ReportController (Diary.Api).
+2024-07-16 18:22:03.274 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-07-16 18:22:03.275 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ConsumesAttribute"]
+2024-07-16 18:22:03.277 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-07-16 18:22:03.278 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-07-16 18:22:03.279 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-07-16 18:22:03.280 +03:00 [DBG] Executing controller factory for controller Diary.Api.Controllers.ReportController (Diary.Api)
+2024-07-16 18:22:03.303 +03:00 [DBG] Entity Framework Core 9.0.0-preview.3.24172.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.0-preview.3+f38a96ceef14e36b11db9bf0111617b30f06c3bb' with options: None
+2024-07-16 18:22:03.308 +03:00 [DBG] Creating DbConnection.
+2024-07-16 18:22:03.309 +03:00 [DBG] Created DbConnection. (0ms).
+2024-07-16 18:22:03.310 +03:00 [DBG] Opening connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:03.323 +03:00 [DBG] Opened connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:03.324 +03:00 [DBG] Closing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:03.326 +03:00 [DBG] Closed connection to database 'Diary' on server 'tcp://localhost:5439' (1ms).
+2024-07-16 18:22:03.328 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-07-16 18:22:03.329 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2024-07-16 18:22:03.331 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (3ms).
+2024-07-16 18:22:03.333 +03:00 [DBG] Opening connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:03.347 +03:00 [DBG] Opened connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:03.350 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2024-07-16 18:22:03.357 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2024-07-16 18:22:03.359 +03:00 [DBG] Closing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:03.361 +03:00 [DBG] Closed connection to database 'Diary' on server 'tcp://localhost:5439' (1ms).
+2024-07-16 18:22:03.364 +03:00 [DBG] Executed controller factory for controller Diary.Api.Controllers.ReportController (Diary.Api)
+2024-07-16 18:22:03.366 +03:00 [DBG] Attempting to bind parameter 'dto' of type 'Diary.Domain.Dto.ReportDto.CreateReportDto' ...
+2024-07-16 18:22:03.368 +03:00 [DBG] Attempting to bind parameter 'dto' of type 'Diary.Domain.Dto.ReportDto.CreateReportDto' using the name '' in request data ...
+2024-07-16 18:22:03.372 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-07-16 18:22:03.382 +03:00 [DBG] Connection id "0HN55KQ0DO4T0", Request id "0HN55KQ0DO4T0:00000009": started reading request body.
+2024-07-16 18:22:03.384 +03:00 [DBG] Connection id "0HN55KQ0DO4T0", Request id "0HN55KQ0DO4T0:00000009": done reading request body.
+2024-07-16 18:22:03.396 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Diary.Domain.Dto.ReportDto.CreateReportDto'
+2024-07-16 18:22:03.398 +03:00 [DBG] Done attempting to bind parameter 'dto' of type 'Diary.Domain.Dto.ReportDto.CreateReportDto'.
+2024-07-16 18:22:03.399 +03:00 [DBG] Done attempting to bind parameter 'dto' of type 'Diary.Domain.Dto.ReportDto.CreateReportDto'.
+2024-07-16 18:22:03.401 +03:00 [DBG] Attempting to validate the bound parameter 'dto' of type 'Diary.Domain.Dto.ReportDto.CreateReportDto' ...
+2024-07-16 18:22:03.405 +03:00 [DBG] Done attempting to validate the bound parameter 'dto' of type 'Diary.Domain.Dto.ReportDto.CreateReportDto'.
+2024-07-16 18:22:03.407 +03:00 [INF] Executing action method Diary.Api.Controllers.ReportController.CreateReportAsync (Diary.Api) - Validation state: "Valid"
+2024-07-16 18:22:03.414 +03:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .FirstOrDefault(x => x.Id == __dto_UserId_0)'
+2024-07-16 18:22:03.425 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.CreatedAt (DateTime) Required, 1], [Property: User.CreatedBy (long) Required, 2], [Property: User.Login (string) Required MaxLength(100), 3], [Property: User.Password (string) Required, 4], [Property: User.UpdatedAt (DateTime?), 5], [Property: User.UpdatedBy (long?), 6] }
+            SELECT TOP(1) u.Id, u.CreatedAt, u.CreatedBy, u.Login, u.Password, u.UpdatedAt, u.UpdatedBy
+            FROM User AS u
+            WHERE u.Id == @__dto_UserId_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        Diary.DAL.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-07-16 18:22:03.430 +03:00 [DBG] Opening connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:03.432 +03:00 [DBG] Opened connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:03.433 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-07-16 18:22:03.434 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-07-16 18:22:03.436 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2024-07-16 18:22:03.437 +03:00 [DBG] Executing DbCommand [Parameters=[@__dto_UserId_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."CreatedBy", u."Login", u."Password", u."UpdatedAt", u."UpdatedBy"
+FROM "User" AS u
+WHERE u."Id" = @__dto_UserId_0
+LIMIT 1
+2024-07-16 18:22:03.445 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__dto_UserId_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."CreatedBy", u."Login", u."Password", u."UpdatedAt", u."UpdatedBy"
+FROM "User" AS u
+WHERE u."Id" = @__dto_UserId_0
+LIMIT 1
+2024-07-16 18:22:03.452 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-16 18:22:03.463 +03:00 [DBG] Closing data reader to 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:03.465 +03:00 [DBG] A data reader for 'Diary' on server 'tcp://localhost:5439' is being disposed after spending 17ms reading results.
+2024-07-16 18:22:03.466 +03:00 [DBG] Closing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:03.467 +03:00 [DBG] Closed connection to database 'Diary' on server 'tcp://localhost:5439' (1ms).
+2024-07-16 18:22:03.470 +03:00 [DBG] Compiling query expression: 
+'DbSet<Report>()
+    .FirstOrDefault(x => x.Name == __dto_Name_0)'
+2024-07-16 18:22:03.474 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Report>(
+    asyncEnumerable: new SingleQueryingEnumerable<Report>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Report.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Report.CreatedAt (DateTime) Required, 1], [Property: Report.CreatedBy (long) Required, 2], [Property: Report.Description (string) Required MaxLength(2000), 3], [Property: Report.Name (string) Required MaxLength(100), 4], [Property: Report.UpdatedAt (DateTime?), 5], [Property: Report.UpdatedBy (long?), 6], [Property: Report.UserId (long) Required FK Index, 7] }
+            SELECT TOP(1) r.Id, r.CreatedAt, r.CreatedBy, r.Description, r.Name, r.UpdatedAt, r.UpdatedBy, r.UserId
+            FROM Report AS r
+            WHERE r.Name == @__dto_Name_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Report>, 
+        Diary.DAL.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-07-16 18:22:03.477 +03:00 [DBG] Opening connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:03.479 +03:00 [DBG] Opened connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:03.480 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-07-16 18:22:03.481 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-07-16 18:22:03.483 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2024-07-16 18:22:03.484 +03:00 [DBG] Executing DbCommand [Parameters=[@__dto_Name_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."CreatedBy", r."Description", r."Name", r."UpdatedAt", r."UpdatedBy", r."UserId"
+FROM "Report" AS r
+WHERE r."Name" = @__dto_Name_0
+LIMIT 1
+2024-07-16 18:22:03.491 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__dto_Name_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."CreatedBy", r."Description", r."Name", r."UpdatedAt", r."UpdatedBy", r."UserId"
+FROM "Report" AS r
+WHERE r."Name" = @__dto_Name_0
+LIMIT 1
+2024-07-16 18:22:03.492 +03:00 [DBG] Closing data reader to 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:03.494 +03:00 [DBG] A data reader for 'Diary' on server 'tcp://localhost:5439' is being disposed after spending 1ms reading results.
+2024-07-16 18:22:03.495 +03:00 [DBG] Closing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:03.497 +03:00 [DBG] Closed connection to database 'Diary' on server 'tcp://localhost:5439' (1ms).
+2024-07-16 18:22:09.049 +03:00 [DBG] 'ApplicationDbContext' generated a temporary value for the property 'Report.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-16 18:22:09.074 +03:00 [DBG] The navigation 'Report.User' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-16 18:22:09.088 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Report' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-16 18:22:09.631 +03:00 [DBG] SaveChanges starting for 'ApplicationDbContext'.
+2024-07-16 18:22:09.640 +03:00 [DBG] DetectChanges starting for 'ApplicationDbContext'.
+2024-07-16 18:22:09.666 +03:00 [DBG] DetectChanges completed for 'ApplicationDbContext'.
+2024-07-16 18:22:09.676 +03:00 [DBG] DetectChanges starting for 'ApplicationDbContext'.
+2024-07-16 18:22:09.677 +03:00 [DBG] DetectChanges completed for 'ApplicationDbContext'.
+2024-07-16 18:22:09.758 +03:00 [DBG] Opening connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:09.759 +03:00 [DBG] Opened connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:09.762 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-07-16 18:22:09.763 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-07-16 18:22:09.765 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2024-07-16 18:22:09.767 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int64), @p2='?', @p3='?', @p4='?' (DbType = DateTime), @p5='?' (DbType = Int64), @p6='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Report" ("CreatedAt", "CreatedBy", "Description", "Name", "UpdatedAt", "UpdatedBy", "UserId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "Id";
+2024-07-16 18:22:09.792 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int64), @p2='?', @p3='?', @p4='?' (DbType = DateTime), @p5='?' (DbType = Int64), @p6='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Report" ("CreatedAt", "CreatedBy", "Description", "Name", "UpdatedAt", "UpdatedBy", "UserId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "Id";
+2024-07-16 18:22:09.837 +03:00 [DBG] The foreign key property 'Report.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-07-16 18:22:09.842 +03:00 [DBG] Closing data reader to 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:09.843 +03:00 [DBG] A data reader for 'Diary' on server 'tcp://localhost:5439' is being disposed after spending 16ms reading results.
+2024-07-16 18:22:09.845 +03:00 [DBG] Closing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:09.847 +03:00 [DBG] Closed connection to database 'Diary' on server 'tcp://localhost:5439' (1ms).
+2024-07-16 18:22:09.858 +03:00 [DBG] An entity of type 'Report' tracked by 'ApplicationDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-16 18:22:09.862 +03:00 [DBG] SaveChanges completed for 'ApplicationDbContext' with 1 entities written to the database.
+2024-07-16 18:22:17.075 +03:00 [INF] Executed action method Diary.Api.Controllers.ReportController.CreateReportAsync (Diary.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13666.162ms.
+2024-07-16 18:22:17.077 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-07-16 18:22:17.078 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-07-16 18:22:17.080 +03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-07-16 18:22:17.081 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-07-16 18:22:17.082 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-07-16 18:22:17.083 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-07-16 18:22:17.085 +03:00 [INF] Executing OkObjectResult, writing value of type 'Diary.Domain.Result.BaseResult`1[[Diary.Domain.Dto.ReportDto.ReportDto, Diary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-16 18:22:17.087 +03:00 [INF] Executed action Diary.Api.Controllers.ReportController.CreateReportAsync (Diary.Api) in 13807.5115ms
+2024-07-16 18:22:17.089 +03:00 [INF] Executed endpoint 'Diary.Api.Controllers.ReportController.CreateReportAsync (Diary.Api)'
+2024-07-16 18:22:17.091 +03:00 [DBG] 'ApplicationDbContext' disposed.
+2024-07-16 18:22:17.092 +03:00 [DBG] Disposing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:22:17.093 +03:00 [DBG] Disposed connection to database 'Diary' on server 'tcp://localhost:5439' (1ms).
+2024-07-16 18:22:17.094 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7021/api/v1/Report/new-report - 200 null application/json; charset=utf-8 13880.6988ms
+2024-07-16 18:25:26.661 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7021/api/v1/Report/update-report - application/json 111
+2024-07-16 18:25:26.671 +03:00 [DBG] 1 candidate(s) found for the request path '/api/v1/Report/update-report'
+2024-07-16 18:25:26.672 +03:00 [DBG] Endpoint 'Diary.Api.Controllers.ReportController.UpdateReportAsync (Diary.Api)' with route pattern 'api/v{version:apiVersion}/Report/update-report' is valid for the request path '/api/v1/Report/update-report'
+2024-07-16 18:25:26.674 +03:00 [DBG] Request matched endpoint 'Diary.Api.Controllers.ReportController.UpdateReportAsync (Diary.Api)'
+2024-07-16 18:25:26.675 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-16 18:25:26.676 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-07-16 18:25:26.677 +03:00 [DBG] The request has an origin header: 'https://localhost:7021'.
+2024-07-16 18:25:26.678 +03:00 [INF] CORS policy execution successful.
+2024-07-16 18:25:26.679 +03:00 [INF] Executing endpoint 'Diary.Api.Controllers.ReportController.UpdateReportAsync (Diary.Api)'
+2024-07-16 18:25:26.682 +03:00 [INF] Route matched with {action = "UpdateReport", controller = "Report"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Diary.Domain.Result.BaseResult`1[Diary.Domain.Dto.ReportDto.ReportDto]]] UpdateReportAsync(Diary.Domain.Dto.ReportDto.UpdateReportDto) on controller Diary.Api.Controllers.ReportController (Diary.Api).
+2024-07-16 18:25:26.684 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-07-16 18:25:26.685 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ConsumesAttribute"]
+2024-07-16 18:25:26.686 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-07-16 18:25:26.687 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-07-16 18:25:26.688 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-07-16 18:25:26.689 +03:00 [DBG] Executing controller factory for controller Diary.Api.Controllers.ReportController (Diary.Api)
+2024-07-16 18:25:26.691 +03:00 [DBG] Entity Framework Core 9.0.0-preview.3.24172.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.0-preview.3+f38a96ceef14e36b11db9bf0111617b30f06c3bb' with options: None
+2024-07-16 18:25:26.694 +03:00 [DBG] Creating DbConnection.
+2024-07-16 18:25:26.694 +03:00 [DBG] Created DbConnection. (0ms).
+2024-07-16 18:25:26.695 +03:00 [DBG] Opening connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:25:26.709 +03:00 [DBG] Opened connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:25:26.710 +03:00 [DBG] Closing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:25:26.712 +03:00 [DBG] Closed connection to database 'Diary' on server 'tcp://localhost:5439' (1ms).
+2024-07-16 18:25:26.714 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-07-16 18:25:26.716 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2024-07-16 18:25:26.717 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (2ms).
+2024-07-16 18:25:26.718 +03:00 [DBG] Opening connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:25:26.720 +03:00 [DBG] Opened connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:25:26.721 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2024-07-16 18:25:26.727 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2024-07-16 18:25:26.730 +03:00 [DBG] Closing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:25:26.731 +03:00 [DBG] Closed connection to database 'Diary' on server 'tcp://localhost:5439' (1ms).
+2024-07-16 18:25:26.732 +03:00 [DBG] Executed controller factory for controller Diary.Api.Controllers.ReportController (Diary.Api)
+2024-07-16 18:25:26.734 +03:00 [DBG] Attempting to bind parameter 'dto' of type 'Diary.Domain.Dto.ReportDto.UpdateReportDto' ...
+2024-07-16 18:25:26.736 +03:00 [DBG] Attempting to bind parameter 'dto' of type 'Diary.Domain.Dto.ReportDto.UpdateReportDto' using the name '' in request data ...
+2024-07-16 18:25:26.737 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-07-16 18:25:26.740 +03:00 [DBG] Connection id "0HN55KQ0DO4T0", Request id "0HN55KQ0DO4T0:0000000B": started reading request body.
+2024-07-16 18:25:26.741 +03:00 [DBG] Connection id "0HN55KQ0DO4T0", Request id "0HN55KQ0DO4T0:0000000B": done reading request body.
+2024-07-16 18:25:26.744 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Diary.Domain.Dto.ReportDto.UpdateReportDto'
+2024-07-16 18:25:26.745 +03:00 [DBG] Done attempting to bind parameter 'dto' of type 'Diary.Domain.Dto.ReportDto.UpdateReportDto'.
+2024-07-16 18:25:26.747 +03:00 [DBG] Done attempting to bind parameter 'dto' of type 'Diary.Domain.Dto.ReportDto.UpdateReportDto'.
+2024-07-16 18:25:26.748 +03:00 [DBG] Attempting to validate the bound parameter 'dto' of type 'Diary.Domain.Dto.ReportDto.UpdateReportDto' ...
+2024-07-16 18:25:26.750 +03:00 [DBG] Done attempting to validate the bound parameter 'dto' of type 'Diary.Domain.Dto.ReportDto.UpdateReportDto'.
+2024-07-16 18:25:26.752 +03:00 [INF] Executing action method Diary.Api.Controllers.ReportController.UpdateReportAsync (Diary.Api) - Validation state: "Valid"
+2024-07-16 18:25:26.755 +03:00 [DBG] Compiling query expression: 
+'DbSet<Report>()
+    .FirstOrDefault(x => x.Id == __reportDto_Id_0)'
+2024-07-16 18:25:26.760 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Report>(
+    asyncEnumerable: new SingleQueryingEnumerable<Report>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Report.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Report.CreatedAt (DateTime) Required, 1], [Property: Report.CreatedBy (long) Required, 2], [Property: Report.Description (string) Required MaxLength(2000), 3], [Property: Report.Name (string) Required MaxLength(100), 4], [Property: Report.UpdatedAt (DateTime?), 5], [Property: Report.UpdatedBy (long?), 6], [Property: Report.UserId (long) Required FK Index, 7] }
+            SELECT TOP(1) r.Id, r.CreatedAt, r.CreatedBy, r.Description, r.Name, r.UpdatedAt, r.UpdatedBy, r.UserId
+            FROM Report AS r
+            WHERE r.Id == @__reportDto_Id_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Report>, 
+        Diary.DAL.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-07-16 18:25:26.762 +03:00 [DBG] Opening connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:25:26.764 +03:00 [DBG] Opened connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:25:26.765 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-07-16 18:25:26.766 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-07-16 18:25:26.768 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2024-07-16 18:25:26.769 +03:00 [DBG] Executing DbCommand [Parameters=[@__reportDto_Id_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."CreatedBy", r."Description", r."Name", r."UpdatedAt", r."UpdatedBy", r."UserId"
+FROM "Report" AS r
+WHERE r."Id" = @__reportDto_Id_0
+LIMIT 1
+2024-07-16 18:25:26.775 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__reportDto_Id_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."CreatedBy", r."Description", r."Name", r."UpdatedAt", r."UpdatedBy", r."UserId"
+FROM "Report" AS r
+WHERE r."Id" = @__reportDto_Id_0
+LIMIT 1
+2024-07-16 18:25:26.778 +03:00 [DBG] Context 'ApplicationDbContext' started tracking 'Report' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-16 18:25:26.779 +03:00 [DBG] Closing data reader to 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:25:26.780 +03:00 [DBG] A data reader for 'Diary' on server 'tcp://localhost:5439' is being disposed after spending 2ms reading results.
+2024-07-16 18:25:26.782 +03:00 [DBG] Closing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:25:26.784 +03:00 [DBG] Closed connection to database 'Diary' on server 'tcp://localhost:5439' (1ms).
+2024-07-16 18:25:28.979 +03:00 [DBG] An entity of type 'Report' tracked by 'ApplicationDbContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-16 18:25:29.264 +03:00 [DBG] SaveChanges starting for 'ApplicationDbContext'.
+2024-07-16 18:25:29.266 +03:00 [DBG] DetectChanges starting for 'ApplicationDbContext'.
+2024-07-16 18:25:29.267 +03:00 [DBG] DetectChanges completed for 'ApplicationDbContext'.
+2024-07-16 18:25:29.270 +03:00 [DBG] DetectChanges starting for 'ApplicationDbContext'.
+2024-07-16 18:25:29.271 +03:00 [DBG] DetectChanges completed for 'ApplicationDbContext'.
+2024-07-16 18:25:29.277 +03:00 [DBG] Opening connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:25:29.279 +03:00 [DBG] Opened connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:25:29.280 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-07-16 18:25:29.281 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-07-16 18:25:29.282 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2024-07-16 18:25:29.283 +03:00 [DBG] Executing DbCommand [Parameters=[@p7='?' (DbType = Int64), @p0='?' (DbType = DateTime), @p1='?' (DbType = Int64), @p2='?', @p3='?', @p4='?' (DbType = DateTime), @p5='?' (DbType = Int64), @p6='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Report" SET "CreatedAt" = @p0, "CreatedBy" = @p1, "Description" = @p2, "Name" = @p3, "UpdatedAt" = @p4, "UpdatedBy" = @p5, "UserId" = @p6
+WHERE "Id" = @p7;
+2024-07-16 18:25:29.302 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@p7='?' (DbType = Int64), @p0='?' (DbType = DateTime), @p1='?' (DbType = Int64), @p2='?', @p3='?', @p4='?' (DbType = DateTime), @p5='?' (DbType = Int64), @p6='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Report" SET "CreatedAt" = @p0, "CreatedBy" = @p1, "Description" = @p2, "Name" = @p3, "UpdatedAt" = @p4, "UpdatedBy" = @p5, "UserId" = @p6
+WHERE "Id" = @p7;
+2024-07-16 18:25:29.340 +03:00 [DBG] Closing data reader to 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:25:29.341 +03:00 [DBG] A data reader for 'Diary' on server 'tcp://localhost:5439' is being disposed after spending 1ms reading results.
+2024-07-16 18:25:29.342 +03:00 [DBG] Closing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:25:29.343 +03:00 [DBG] Closed connection to database 'Diary' on server 'tcp://localhost:5439' (1ms).
+2024-07-16 18:25:29.346 +03:00 [DBG] An entity of type 'Report' tracked by 'ApplicationDbContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-16 18:25:29.363 +03:00 [DBG] SaveChanges completed for 'ApplicationDbContext' with 1 entities written to the database.
+2024-07-16 18:25:35.648 +03:00 [INF] Executed action Diary.Api.Controllers.ReportController.UpdateReportAsync (Diary.Api) in 8958.7469ms
+2024-07-16 18:25:35.650 +03:00 [INF] Executed endpoint 'Diary.Api.Controllers.ReportController.UpdateReportAsync (Diary.Api)'
+2024-07-16 18:25:35.749 +03:00 [ERR] Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AsyncStateMachineBox`1 -> ReportDto
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[Diary.Domain.Entity.Report, Diary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Diary.Application.Handlers.UpdateReportHandler+<Handle>d__2, Diary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> Diary.Domain.Dto.ReportDto.ReportDto
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AsyncStateMachineBox`1 -> ReportDto
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[Diary.Domain.Entity.Report, Diary.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Diary.Application.Handlers.UpdateReportHandler+<Handle>d__2, Diary.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> Diary.Domain.Dto.ReportDto.ReportDto
+   at lambda_method307(Closure, Object, ReportDto, ResolutionContext)
+   at Diary.Application.Services.ReportService.UpdateReportAsync(UpdateReportDto reportDto) in C:\Users\Eugeny\Desktop\Diary\Core\Diary.Application\Services\ReportService.cs:line 158
+   at Diary.Api.Controllers.ReportController.UpdateReportAsync(UpdateReportDto dto) in C:\Users\Eugeny\Desktop\Diary\Presentation\Diary.Api\Controllers\ReportController.cs:line 124
+   at lambda_method297(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Prometheus.HttpMetrics.HttpRequestDurationMiddleware.Invoke(HttpContext context)
+   at Prometheus.HttpMetrics.HttpRequestCountMiddleware.Invoke(HttpContext context)
+   at Prometheus.HttpMetrics.HttpInProgressMiddleware.Invoke(HttpContext context)
+   at Diary.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\Eugeny\Desktop\Diary\Presentation\Diary.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 23
+2024-07-16 18:25:35.771 +03:00 [DBG] 'ApplicationDbContext' disposed.
+2024-07-16 18:25:35.773 +03:00 [DBG] Disposing connection to database 'Diary' on server 'tcp://localhost:5439'.
+2024-07-16 18:25:35.774 +03:00 [DBG] Disposed connection to database 'Diary' on server 'tcp://localhost:5439' (1ms).
+2024-07-16 18:25:35.775 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7021/api/v1/Report/update-report - 500 null application/json; charset=utf-8 9114.1498ms

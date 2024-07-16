@@ -1,5 +1,6 @@
 ﻿using Diary.Application.Services;
 using Diary.Tests.Configurations;
+using MediatR;
 using Microsoft.Extensions.Caching.Distributed;
 using Moq;
 using Xunit;
@@ -16,7 +17,7 @@ public class ReportServiceTests
         var mockReportRepository = MockRepositoriesGetter.GetMockReportRepository();
         var mockDistributedCache = new Mock<IDistributedCache>();
         var reportService = new ReportService(mockReportRepository.Object, null, null, null, null, null, null,
-            mockDistributedCache.Object);
+            mockDistributedCache.Object, null);
         
         //Act
         var result = await reportService.GetReportByIdAsync(1);

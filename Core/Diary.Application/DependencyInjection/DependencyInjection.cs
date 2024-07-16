@@ -3,6 +3,7 @@ using Diary.Application.Services;
 using Diary.Application.Validation.FluentValidations.Report;
 using Diary.Application.Validation.Report;
 using Diary.Domain.Dto.ReportDto;
+using Diary.Domain.Entity;
 using Diary.Domain.Interfaces.Services;
 using Diary.Domain.Interfaces.Validations;
 using Diary.Domain.Settings;
@@ -17,7 +18,9 @@ public static class DependencyInjection
     public static void AddApplication(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddAutoMapper(typeof(ReportMapping));
-
+        
+        services.AddMediatR(x => x.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly));
+        
         var options = configuration.GetSection(nameof(RedisSettings));
         var redisUrl = options["Url"];
         var instanceName = options["InstanceName"];
@@ -42,5 +45,6 @@ public static class DependencyInjection
         services.AddScoped<ITokenService, TokenService>();
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<IRoleService, RoleService>();
+        services.AddScoped<Report, Report>();
     }
 }
