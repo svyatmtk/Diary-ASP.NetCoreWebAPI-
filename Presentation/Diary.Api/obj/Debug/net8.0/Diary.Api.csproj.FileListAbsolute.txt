@@ -91,3 +91,5 @@ C:\Users\Eugeny\Desktop\Diary\Presentation\Diary.Api\bin\Debug\net8.0\Pipelines.
 C:\Users\Eugeny\Desktop\Diary\Presentation\Diary.Api\bin\Debug\net8.0\StackExchange.Redis.dll
 C:\Users\Eugeny\Desktop\Diary\Presentation\Diary.Api\bin\Debug\net8.0\Prometheus.NetStandard.dll
 C:\Users\Eugeny\Desktop\Diary\Presentation\Diary.Api\bin\Debug\net8.0\Prometheus.AspNetCore.dll
+C:\Users\Eugeny\Desktop\Diary\Presentation\Diary.Api\bin\Debug\net8.0\MediatR.dll
+C:\Users\Eugeny\Desktop\Diary\Presentation\Diary.Api\bin\Debug\net8.0\MediatR.Contracts.dll

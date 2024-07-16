@@ -18,7 +18,7 @@ namespace Diary.DAL.DateInterceptors
             }
 
             var entries = dbContext.ChangeTracker.Entries<IAuditable>()
-                .Where(x => x.State == EntityState.Added || x.State == EntityState.Modified);
+                .Where(x => x.State is EntityState.Added or EntityState.Modified);
 
             foreach (var entry in entries)
             {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LErvN6dj9F5CC/hNW0d5cpXjjkJTlVrAGPdmkQAOKE1IptRGeyzcECjvahr8fgrcoGcBdB8TwhAvh3GFCbZXPw==",
+  "dgSpecHash": "WfvQMzOMO7ryJhLXHRr4JI1+ckTWN/fhjbVwaulmgDrIoNALCpJ+nD8+7Eo26wSIp4vgM8tOUhzGqFGK5FE8bg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Eugeny\\Desktop\\Diary\\Core\\Diary.Application\\Diary.Application.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,8 @@
     "C:\\Users\\Eugeny\\.nuget\\packages\\asp.versioning.mvc.apiexplorer\\8.1.0\\asp.versioning.mvc.apiexplorer.8.1.0.nupkg.sha512",
     "C:\\Users\\Eugeny\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Eugeny\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
+    "C:\\Users\\Eugeny\\.nuget\\packages\\mediatr\\12.3.0\\mediatr.12.3.0.nupkg.sha512",
+    "C:\\Users\\Eugeny\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Eugeny\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.4\\microsoft.aspnetcore.authentication.jwtbearer.8.0.4.nupkg.sha512",
     "C:\\Users\\Eugeny\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0-preview.3.24172.4\\microsoft.entityframeworkcore.9.0.0-preview.3.24172.4.nupkg.sha512",
     "C:\\Users\\Eugeny\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.0-preview.3.24172.4\\microsoft.entityframeworkcore.abstractions.9.0.0-preview.3.24172.4.nupkg.sha512",
